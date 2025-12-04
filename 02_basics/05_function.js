@@ -59,7 +59,7 @@ function loginUser(username="abc"){
         console.log("please enter username ")
         return
     }
-    return `${username} just loggin in`
+    return `${username} just loggin in`;
 
 }
-console.log(loginUser("ankit"))
+console.log(loginUser("ankit"));
