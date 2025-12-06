@@ -1,7 +1,5 @@
 function calculateCartPrice(...num1){ // (...)it is also called rest  operator and spread operator .
     return num1
-
-
 }
 //console.log(calculateCartPrice(200, 400,600));
 

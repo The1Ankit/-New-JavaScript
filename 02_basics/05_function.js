@@ -60,6 +60,5 @@ function loginUser(username="abc"){
         return
     }
     return `${username} just loggin in`;
-
 }
 console.log(loginUser("ankit"));
