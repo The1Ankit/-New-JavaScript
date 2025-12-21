@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+
+</head>
+<body style="background-color: lightskyblue; color:#fff;">
+    
+</body>
+<script>
+    const Div=document.createElement('div');
+    console.log(Div);
+    Div.className='newDiv';
+    Div.id=Math.round(Math.random()*20);
+    Div.style.backgroundColor="green";
+    Div.style.padding="20px";
+   // Div.innerText="This is a new Div created using JS"
+    const addText=document.createTextNode("This is a new Text Node");
+    Div.appendChild(addText);
+    document.body.appendChild(Div);
+
+</script>
+</html>
