@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+     <h2>Amazing Images</h2>
+     <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/21033429/pexels-photo-21033429.jpeg" alt="Image 1"></li>
+            <li><img width="200px"  id="illustrator" src="https://images.pexels.com/photos/36408567/pexels-photo-36408567.jpeg" alt="Image 2"></li>
+            <li><img width="200px" id="indesign" src="https://images.pexels.com/photos/28056725/pexels-photo-28056725.jpeg" alt="Image 3"></li>
+            <li><img width="200px" id="indesign1" src="https://images.pexels.com/photos/36610829/pexels-photo-36610829.jpeg" alt="Image 4"></li>
+            <li><a style="color: aliceblue;" href="https://www.google.com" id="google">Visit Google</a></li>
+        </ul>
+     </div>
+
+</body>
+<script>
+    // document.getElementById('illustrator') .onclick = function(){
+  //      alert("image2 clicked")
+ //   }
+ //document.getElementById('photoshop').addEventListener('click', function(e){
+    //console.log(e);
+   
+ //} false)
+ document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target);
+ })
+ </script>
+</html>
+
