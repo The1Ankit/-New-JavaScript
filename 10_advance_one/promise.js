@@ -9,8 +9,7 @@ const promiseOne = new Promise( function(resolve, reject){ //(promise constructo
     setTimeout( function(){
         console.log('asynchronous task is complete');
         resolve('success');
-    }, 1000);
-  
+    }, 1000); 
 });
 promiseOne.then( function(){ //then is used to handle the resolved value of the promise
     console.log('Promise resolved');
@@ -67,3 +66,42 @@ promiseFour
     console.log('Promise 4 is settled');
 })
 /////////////////////////////////////////////////////////////////////////////////
+
+
+const promiseFive= new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error=true
+        if (!error){
+            resolve({username:"Ankit", password:"1234"})
+        }else{
+            reject("Error:something wrong")
+        }
+
+    } ,1000)
+
+})
+async function consumePromiseFive(){
+  try {
+    const response=  await promiseFive
+  console.log(response);
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+consumePromiseFive();
+
+//async function getAllUsers(){
+   // try {
+   //    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+       // const data = await response.json()
+   //    console.log(data)
+   // } catch (error) {
+ //       console.log("E:", error);
+  //  }
+
+//}
+//getAllUsers();
+
+
+////////////////////////////////////////////////////////////////////////////
