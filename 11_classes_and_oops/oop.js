@@ -41,5 +41,5 @@ const user1 =  new  User("johnp", "johnp@gmail.com", 10, true);
 const user2 =  new  User("johnp1", "johnp1@gmail.com", 5, false);
 console.log (user1);
 console.log (user2);
-user1.greeting();
+user1.greeting();_
 user2.greeting();
