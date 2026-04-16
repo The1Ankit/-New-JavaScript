@@ -23,15 +23,21 @@ const person1 = new Person("Alice", 30);
 const person2 = new Person("Bob", 25);
 person1.greet(); // Output: Hello, my name is Alice and I am 30 years old.
 person2.greet(); // Output: Hello, my name is Bob and I am 25 years old.
+
 console.log(person1.__proto__ === Person.prototype);
 
-/* Here what happend behind the scenes when the new keyword is used:
+/*
+ Here what happend behind the scenes when the new keyword is used:
+ 
 1. A new empty object is created. the new keyword initiates the creation of a new object,
   which is an instance of the constructor function (Person in this case).
 2. The prototype  is linked : the newly created object's internal [[Prototype]] property is set to point to the
   prototype object of the constructor function.This means that the new object inherits properties and methods from the
   constructor function's prototype.
-3. The constructor function is called with the new object as its context (this), allowing it to initialize the properties of the new object.
+3. The constructor function is called with the new object as its context (this),
+ allowing it to initialize the properties of the new object.
 4. The new object is returned as the result of the constructor function call.
-*/
+*/ 
+
+
 
