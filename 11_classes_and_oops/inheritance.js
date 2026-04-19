@@ -4,7 +4,6 @@
     }
     logMe() {
         console.log(`USERNAME is ${this.username} `);
-
     }   
 }
 class Teacher extends user {
