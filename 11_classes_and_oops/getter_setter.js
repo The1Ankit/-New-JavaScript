@@ -1,0 +1,25 @@
+ class User {
+  constructor(name, email) {
+    this._name = name;
+    this._email = email;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(value) {
+    this._name = value;
+  }
+
+  get email() {
+    return this._email;
+  }
+
+  set email(value) {
+    this._email = value;
+  }
+ }
+const person = new User("Ankit", "ankit@example.com");
+console.log(person.name); // Output: Ankit
+console.log(person.email); // Output: ankit@example.com
